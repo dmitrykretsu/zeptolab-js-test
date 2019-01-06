@@ -1,0 +1,52 @@
+.wrapper {
+display: flex;
+align-items: center;
+margin: auto;
+}
+
+#carousel {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    padding: 0px;
+    margin: 0 auto;
+    list-style-type: none;
+    z-index: 0;
+}
+
+.item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 10%;
+    max-width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    transition: all 0.5s ease;
+    transform: translate3d(0,0,0);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.prev {
+    left: -50%;
+    top: 25px;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.next {
+    left: 50%;
+    top: 25px;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+.show {
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 4;
+}

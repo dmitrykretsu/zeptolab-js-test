@@ -1,0 +1,25 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="carousel">
+      <img class="item prev" src="https://web-assets.zeptolab.com/api/images/test_gallery/5years.jpg" alt="5years">
+      <img class="item show" src="https://web-assets.zeptolab.com/api/images/test_gallery/ctr2.jpg" alt="ctr2">
+      <img class="item next" src="https://web-assets.zeptolab.com/api/images/test_gallery/ctrtt.jpg" alt="ctrtt">
+      <img class="item" src="https://web-assets.zeptolab.com/api/images/test_gallery/kt.jpg" alt="kt">
+      <img class="item" src="https://web-assets.zeptolab.com/api/images/test_gallery/magic.jpg" alt="magic">
+      <img class="item" src="https://web-assets.zeptolab.com/api/images/test_gallery/myomnom.jpg" alt="myomnom">
+    </div>
+  </div>
+  <script>
+    var items = document.querySelectorAll('#carousel .item');
+    var carousel = document.getElementById('carousel');
+    carousel.onmouseover = function() {playPause()};
+    carousel.onmouseout = function() {playPause()};
+    carousel.onclick = function() {nextItem()};
+  </script>
+</body>
+</html>
